@@ -5,7 +5,7 @@ import tushare as ts
 import matplotlib.pyplot as plt
 import mpl_finance as mpf
 #get data as a pandas type 
-data = ts.get_k_data('399300', index=True, start='2016-01-01', end='2017-06-31')
+data = ts.get_k_data('399300', index=True, start='2013-01-01', end='2017-06-31')
 print (data,type(data))
 sma_10 = talib.SMA(np.array(data['close']), 10)
 sma_30 = talib.SMA(np.array(data['close']), 30)
